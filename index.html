@@ -41,8 +41,8 @@
         <div class="col-sm-4">
           <div class="col-xs-3" ng-repeat="stack in ctrl.freeCells">
             <div class="my-stack">
-              <button type="button" class="btn btn-default" ng-click="ctrl.select(stack, $index, 'freecell')" ng-show="!ctrl.isSelected" ng-disabled="ctrl.isEmpty(stack, true)">SELECT</button>
-              <button type="button" class="btn btn-primary" ng-click="ctrl.place($index, 'freecell')" ng-show="ctrl.isSelected" ng-disabled="!ctrl.isEmpty(stack, true)">PLACE</button>
+              <button type="button" class="btn btn-default" ng-click="ctrl.select(stack, $index, 'freecell')" ng-show="!ctrl.isSelected" ng-disabled="ctrl.isEmpty(stack, true)">SELECIONAR</button>
+              <button type="button" class="btn btn-primary" ng-click="ctrl.place($index, 'freecell')" ng-show="ctrl.isSelected" ng-disabled="!ctrl.isEmpty(stack, true)">COLOCAR</button>
               <card obj="ctrl.lastOf(stack)" is-cell="true"></card>
             </div>
           </div>
@@ -55,8 +55,8 @@
         <div class="col-sm-4">
           <div class="col-xs-3" ng-repeat="stack in ctrl.deposits">
             <div class="my-stack">
-              <button type="button" class="btn btn-default" ng-click="ctrl.select(stack, $index, 'deposit')" ng-show="!ctrl.isSelected" ng-disabled="ctrl.isEmpty(stack, true)">SELECT</button>
-              <button type="button" class="btn btn-primary" ng-click="ctrl.place($index, 'deposit')" ng-show="ctrl.isSelected" ng-disabled="!ctrl.isPlacable(stack, $index, true)">PLACE</button>
+              <button type="button" class="btn btn-default" ng-click="ctrl.select(stack, $index, 'deposit')" ng-show="!ctrl.isSelected" ng-disabled="ctrl.isEmpty(stack, true)">SELECIONAR</button>
+              <button type="button" class="btn btn-primary" ng-click="ctrl.place($index, 'deposit')" ng-show="ctrl.isSelected" ng-disabled="!ctrl.isPlacable(stack, $index, true)">COLOCAR</button>
               <card obj="ctrl.lastOf(stack)" is-cell="true"></card>
             </div>
           </div>
@@ -67,8 +67,8 @@
       <div class="row">
         <div class="col-xs-2"></div>
         <div class="my-stack col-xs-1" ng-repeat="stack in ctrl.stacks">
-          <button type="button" class="btn btn-default" ng-click="ctrl.select(stack, $index)" ng-show="!ctrl.isSelected" ng-disabled="ctrl.isEmpty(stack)">SELECT</button>
-          <button type="button" class="btn btn-primary" ng-click="ctrl.place($index)" ng-show="ctrl.isSelected" ng-disabled="!ctrl.isPlacable(stack, $index)">PLACE</button>
+          <button type="button" class="btn btn-default" ng-click="ctrl.select(stack, $index)" ng-show="!ctrl.isSelected" ng-disabled="ctrl.isEmpty(stack)">SELECIONAR</button>
+          <button type="button" class="btn btn-primary" ng-click="ctrl.place($index)" ng-show="ctrl.isSelected" ng-disabled="!ctrl.isPlacable(stack, $index)">COLOCAR</button>
           <card ng-repeat="card in stack" obj="card"></card>
         </div>
         <div class="col-xs-2"></div>

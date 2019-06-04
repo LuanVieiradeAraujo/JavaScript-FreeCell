@@ -7,11 +7,9 @@
     <meta name="author" content="Julio L. Muller" />
     <meta name="description" content="Freecell Solitaire Card Game for browsers" />
     <meta name="keywords" content="javascript, freecell javascript, playing cards, solitaire game, web app, web game" />
-    <!-- Page Title -->
     <title>
-      FreeNeves JS - A Freecell Solitaire Card Game
+      Solitaire
     </title>
-    <!-- Style Sheets -->
     <link rel="icon" href="./img/favicon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
@@ -33,11 +31,11 @@
     </div>
     <div>
 
-      <!-- Top cards deposites -->
+      <!-- Depósito superior -->
       <div class="row">
         <div class="col-sm-1"></div>
 
-        <!-- Free cells -->
+        <!-- Celulas vazias -->
         <div class="col-sm-4">
           <div class="col-xs-3" ng-repeat="stack in ctrl.freeCells">
             <div class="my-stack">
@@ -48,10 +46,10 @@
           </div>
         </div>
 
-        <!-- Center -->
+        <!-- Centro -->
         <div class="col-sm-2 my-logo"></div>
 
-        <!-- Deposit cells -->
+        <!-- Depósitos -->
         <div class="col-sm-4">
           <div class="col-xs-3" ng-repeat="stack in ctrl.deposits">
             <div class="my-stack">
@@ -63,7 +61,7 @@
         </div>
       </div>
 
-      <!-- Cards stacks -->
+      <!-- Pilha de cartas -->
       <div class="row">
         <div class="col-xs-2"></div>
         <div class="my-stack col-xs-1" ng-repeat="stack in ctrl.stacks">
@@ -74,5 +72,9 @@
         <div class="col-xs-2"></div>
       </div>
     </div>
+	
+	
+	
+	
   </body>
 </html>
